@@ -21,8 +21,21 @@ Note:
 
 
 function loketPelayan(nomorUrut) {
-  
-}
+    let salah = 'Tidak Masuk Loket';
+
+    if(nomorUrut === 1 || nomorUrut === 4 || nomorUrut === 7 || nomorUrut === 10 ){
+            return `Layanan Loket A`;
+    }
+        else if(nomorUrut === 2 || nomorUrut === 5|| nomorUrut === 8|| nomorUrut === 11 ){
+            return `Layanan Loket B`;
+        }   
+        else if(nomorUrut === 3 || nomorUrut === 6|| nomorUrut === 9|| nomorUrut === 12 ){
+        return `Layanan Loket C`;
+        }
+    else{
+        return salah;
+    };
+};
 
 console.log(loketPelayan(1)); // Layanan Loket A
 console.log(loketPelayan(5)); // Layanan Loket B

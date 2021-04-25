@@ -18,7 +18,17 @@ Contoh:
 */
 
 function firstLetter(name){
+ let salah = `Masuk group terakhir`;
 
+ if(name[0] === 'a' || name[0] === 'b' || name[0] === 'c' || name[0] === 'd' ){
+         return `Masuk group pertama`;
+ }
+     else if(name[0] === 'e' || name[0] === 'f' || name[0] === 'g' || name[0] === 'h' ){
+         return `Masuk group kedua`;
+ }   
+ else{
+     return salah;
+     };
 }
 
 console.log(firstLetter('alwan')) //Masuk group pertama

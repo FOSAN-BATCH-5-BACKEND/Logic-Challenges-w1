@@ -7,6 +7,16 @@ Jika kedua angka bernilai sama, function akan me-return -1.
 
 function bandingkanAngka(angka1, angka2) {
   // you can only write your code here!
+  var salah = -1;
+
+  if(angka1 < angka2)
+      return true;
+    else if(angka1 > angka2){
+      return false;
+    }
+  else {
+    return salah;
+  }
 }
 
 // TEST CASES
