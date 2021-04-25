@@ -21,9 +21,18 @@ Note:
 
 
 function loketPelayan(nomorUrut) {
-  
+    if (nomorUrut == 1 || nomorUrut == 4 || nomorUrut == 7 || nomorUrut == 10 ){
+        return "Layanan Loket A";
+    }else if (nomorUrut == 2 || nomorUrut == 5 || nomorUrut == 8 || nomorUrut == 11 ){
+            return "Layanan Loker B";
+        }else if(nomorUrut == 3 || nomorUrut == 6 || nomorUrut == 9 || nomorUrut == 12 ){
+        return "Layanan Loket C";
+        } else if(nomorUrut > 12 || nomorUrut < 1 ){
+            return "Nomor Antrian invalid";  
+}else{
+    return "juga invalid nomornya"
 }
-
+}
 console.log(loketPelayan(1)); // Layanan Loket A
 console.log(loketPelayan(5)); // Layanan Loket B
 console.log(loketPelayan(6)); // Layanan Loket C
