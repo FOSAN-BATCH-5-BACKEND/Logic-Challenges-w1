@@ -3,10 +3,17 @@ Diberikan sebuah function konversiMenit(menit) yang menerima satu parameter beru
 Function akan me-return string waktu dalam format jam:menit berdasarkan menit tersebut.
 Contoh, jika menit adalah 63, maka function akan me-return "1:03".
 */
-
+    
 function konversiMenit(menit) {
   // you can only write your code here!
-}
+    let jam = Math.floor(menit/60);
+    let sisaMenit = menit % 60;
+    if (jam < 10) { jam }
+    if (sisaMenit < 10) { sisaMenit = "0" +sisaMenit}
+    let waktu = jam + ":"+ sisaMenit;
+    return waktu;
+}   
+
 
 // TEST CASES
 console.log(konversiMenit(63)); // 1:03
