@@ -21,7 +21,15 @@ Note:
 
 
 function loketPelayan(nomorUrut) {
-  
+    if(nomorUrut == 1 || nomorUrut == 4 || nomorUrut == 7 || nomorUrut == 10) {
+        console.log("Layanan Loket A");
+    } else if(nomorUrut == 2 || nomorUrut == 5 || nomorUrut == 8 || nomorUrut == 11) {
+        console.log("Layanan Loket B");
+    } else if(nomorUrut == 3 || nomorUrut == 6 || nomorUrut == 9 || nomorUrut == 12) {
+        console.log("Layanan Loket C");
+    } else {
+        console.log("Tidak Masuk ke Loket");
+    }
 }
 
 console.log(loketPelayan(1)); // Layanan Loket A

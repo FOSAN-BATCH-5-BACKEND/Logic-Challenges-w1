@@ -18,7 +18,13 @@ Contoh:
 */
 
 function firstLetter(name){
-
+    if(name.substr(0,1) == 'a' || name.substr(0,1) == 'b' || name.substr(0,1) == 'c' || name.substr(0,1) == 'd') {
+        console.log("Masuk group pertama");
+    } else if(name.substr(0,1) == 'e' || name.substr(0,1) == 'f' || name.substr(0,1) == 'g' || name.substr(0,1) == 'h') {
+        console.log("Masuk group kedua");
+    } else {
+        console.log("Masuk group terakhir");
+    }
 }
 
 console.log(firstLetter('alwan')) //Masuk group pertama
