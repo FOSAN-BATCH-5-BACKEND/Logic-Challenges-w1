@@ -6,13 +6,13 @@ Jika kedua angka bernilai sama, function akan me-return -1.
 */
 
 function bandingkanAngka(angka1, angka2) {
-    if(angka2 > angka1){
-        return "true";
-    }else if(angka1 == angka2){
-        return "-1";
-    }else{
-        return "false";
-    }
+   if(angka2 > angka1){
+       return 'true';
+   }else if(angka1 == angka2){
+       return '-1'
+   }else{
+       return 'false';
+   }
 }
 
 // TEST CASES
