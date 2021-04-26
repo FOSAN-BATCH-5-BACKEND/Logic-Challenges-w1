@@ -18,7 +18,16 @@ Contoh:
 */
 
 function firstLetter(name){
-
+    let hurufAwal = name.charAt(0);
+    let akhir = `${name} : Masuk group terakhir`;
+    
+    if (hurufAwal === "a" || hurufAwal === "b"|| hurufAwal === "c" || hurufAwal === "d"){
+        return `${name} : Masuk group pertama`;
+    } else if (hurufAwal === "e" || hurufAwal === "f"|| hurufAwal === "g" || hurufAwal === "h"){
+        return `${name} : Masuk group kedua`;
+    } else {
+        return akhir;
+    }
 }
 
 console.log(firstLetter('alwan')) //Masuk group pertama

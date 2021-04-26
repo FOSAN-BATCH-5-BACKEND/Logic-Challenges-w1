@@ -7,8 +7,15 @@ Jika kedua angka bernilai sama, function akan me-return -1.
 
 function bandingkanAngka(angka1, angka2) {
   // you can only write your code here!
+  console.log("--------------");
+  if (angka2 > angka1){
+    return `true`;
+  } else if (angka1 == angka2) {
+    return '-1';
+  } else {
+    return `false`;
+  }
 }
-
 // TEST CASES
 console.log(bandingkanAngka(5, 8)); // true
 console.log(bandingkanAngka(5, 3)); // false
