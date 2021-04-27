@@ -18,12 +18,48 @@ Contoh:
 */
 
 function firstLetter(name){
+//  if (name[0] == "a" || name[0] == "b" ||name[0] == "c" ||name[0] == "d") {
+//      return "Masuk group pertama"
+//  }
 
+ let grupSatu = "Masuk group pertama";
+ let grupDua = "Masuk group kedua";
+ let grupTerakhir = "Masuk group terakhir";
+  switch (name[0]) {
+    case "a":
+      return grupSatu;
+      break;
+    case "b":
+      return grupSatu;
+      break;
+    case "c":
+      return grupSatu;
+      break;
+    case "d":
+      return grupSatu;
+      break;
+    case "e":
+      return grupDua;
+      break;
+    case "f":
+      return grupDua;
+      break;
+    case "g":
+      return grupDua;
+      break;
+    case "h":
+      return grupDua;
+      break;
+
+    default:
+      return grupTerakhir;
+      break;
+  }
 }
 
-console.log(firstLetter('alwan')) //Masuk group pertama
-console.log(firstLetter('bhagas'))// Masuk group pertama
-console.log(firstLetter('fitra')) //Masuk group kedua
+console.log(firstLetter('yoga')) //Masuk group pertama
+console.log(firstLetter('budi'))// Masuk group pertama
+console.log(firstLetter('athfal')) //Masuk group kedua
 console.log(firstLetter('hary')) //Masuk group kedua
 console.log(firstLetter('yupek')) // Masuk group terakhir
 console.log(firstLetter('kipli')) // Masuk group terakhir
