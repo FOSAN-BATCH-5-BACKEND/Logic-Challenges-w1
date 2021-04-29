@@ -18,19 +18,19 @@ Contoh:
 */
 
 function firstLetter(name){
-  if(name[0] == "a" || name[0] == "b" || name[0] == "c" || name[0] == "d"){
-      console.log("Masuk grup pertama");
-  } else if(name[0] == "e" || name[0] == "f" || name[0] == "g" || name[0] == "h"){
-      console.log("Masuk grup kedua");
-  }else{
-      console.log("Masuk grup terakhir");
-  }
+    if(name[0] == 'a' || name[0] == 'b' || name[0] == 'c' || name[0] == 'd'){
+        return "Masuk group pertama"
+    }else if(name[0] == 'e' || name[0] == 'f' || name [0]== 'g' || name[0] == 'h'){
+        return "Masuk group kedua"
+    }else{
+        return "Masuk group terakhir"
+    }
 }
 
-firstLetter('alwan'); //Masuk group pertama
-firstLetter('bhagas');// Masuk group pertama
-firstLetter('fitra');//Masuk group kedua
-firstLetter('hary'); //Masuk group kedua
-firstLetter('yupek'); // Masuk group terakhir
-firstLetter('kipli'); // Masuk group terakhir
-firstLetter('songkro'); //Masuk group terakhir
+console.log(firstLetter('alwan')); //Masuk group pertama
+console.log(firstLetter('bhagas'));// Masuk group pertama
+console.log(firstLetter('fitra'));//Masuk group kedua
+console.log(firstLetter('hary')); //Masuk group kedua
+console.log(firstLetter('yupek')); // Masuk group terakhir
+console.log(firstLetter('kipli')); // Masuk group terakhir
+console.log(firstLetter('songkro')); //Masuk group terakhir

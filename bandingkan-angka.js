@@ -6,18 +6,33 @@ Jika kedua angka bernilai sama, function akan me-return -1.
 */
 
 function bandingkanAngka(angka1, angka2) {
-   if(angka2 > angka1){
-       return 'true';
-   }else if(angka1 == angka2){
-       return '-1'
-   }else{
-       return 'false';
-   }
+    // console.log(angka1, angka2);
+    if(angka2 < angka1){
+        return true;
+    }
+    if(angka1 < angka2){
+        return false;
+    }
+    if(angka1 == angka2){
+        return -1;
+    }
+    // }else if(angka2 > angka1){
+    //     return true;
+    // }
+    // if(angka2 > angka1){
+    //     return true;
+    // }else if(angka1 < angka2){
+    //     return false;
+    // }else if(angka1 == angka2){
+    //     return -1;
+    // }else{
+    //     return 'error';
+    // }
 }
 
 // TEST CASES
-bandingkanAngka(5, 8); // true
-bandingkanAngka(5, 3); // false
-bandingkanAngka(4, 4); // -1
-bandingkanAngka(3, 3); // -1
-bandingkanAngka(17, 2); // false
+console.log(bandingkanAngka(8, 5)); // true
+console.log(bandingkanAngka(5, 3)); // false
+console.log(bandingkanAngka(4, 4)); // -1
+console.log(bandingkanAngka(3, 3)); // -1
+console.log(bandingkanAngka(2, 17)); // false

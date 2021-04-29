@@ -21,21 +21,21 @@ Note:
 
 
 function loketPelayan(nomorUrut) {
-    if(nomorUrut == 1 || nomorUrut == 4 || nomorUrut == 7 || nomorUrut ==10){
-        console.log("Silahkan ke Loket A");
-    }else if(nomorUrut === 2 || nomorUrut === 5 || nomorUrut === 8 || nomorUrut === 11){
-        console.log("Silahkan ke Loket B");
-    }else if(nomorUrut === 3 || nomorUrut === 6 || nomorUrut === 9 || nomorUrut === 12){
-        console.log("Silahkan ke Loket C");
-    }else{
-        console.log("Tidak Masuk Ke Loket");
-    }
+   if(nomorUrut == 1 || nomorUrut == 4 || nomorUrut == 7 || nomorUrut == 10){
+       return "Masuk ke Loket A"
+   }else if(nomorUrut == 2 || nomorUrut == 5 || nomorUrut == 8 || nomorUrut == 11){
+       return "Masuk ke Loket B"
+   }else if(nomorUrut == 3 || nomorUrut == 6 || nomorUrut == 9 || nomorUrut ==12){
+       return "Masuk ke Loket C"
+   }else{
+       return "Nomor antrian invalid";
+   }
 }
 
-loketPelayan(4);
-loketPelayan(5);
-loketPelayan(12);
-loketPelayan(15);
+console.log(loketPelayan(4));
+console.log(loketPelayan(5));
+console.log(loketPelayan(12));
+console.log(loketPelayan(15));
 // console.log(loketPelayan(2)); // Layanan Loket A
 // console.log(loketPelayan(1)); // Layanan Loket B
 // console.log(loketPelayan(7)); // Layanan Loket C
